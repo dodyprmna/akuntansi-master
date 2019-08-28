@@ -32,4 +32,5 @@ class C_pengaturan extends CI_Controller {
     {
         echo $this->M_pengaturan->activateAkun($_POST);
     }
+    //coba
 }

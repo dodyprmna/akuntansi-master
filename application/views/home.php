@@ -220,16 +220,17 @@
             
           }
 
+          var detailAkun = <?php echo "'".$namaAkun."'";?>;
 
           var G_debet=0;
           var G_kredit=0;
           var bal=0;
 
-          var detailAkun='{"aset":[{"id":"11","akun":"Kas"}, {"id":"12", "akun":"Piutang Usaha"}, {"id":"14", "akun":"Bahan Habis Pakai"}, {"id":"15", "akun":"Stock"}, {"id":"17", "akun":"Tanah"}],\
-                            "liabilitas":[{"id":"21", "akun":"Utang Usaha"},{"id":"23", "akun":"Sewa Diterima Di Muka"}],\
-                            "ekuitas":[{"id":"31", "akun":"Modal"}, {"id":"32", "akun":"Prive"}],\
-                            "pendapatan":[{"id":"41","akun":"Penjualan"},{"id":"42","akun":"Retur Penjualan"}],\
-                            "beban":[{"id":"51","akun":"Beban Gaji"},{"id":"52","akun":"Beban Sewa"}]}';
+          // var detailAkun='{"aset":[{"id":"11","akun":"Kas"}, {"id":"12", "akun":"Piutang Usaha"}, {"id":"14", "akun":"Bahan Habis Pakai"}, {"id":"15", "akun":"Stock"}, {"id":"17", "akun":"Tanah"}],\
+          //                   "liabilitas":[{"id":"21", "akun":"Utang Usaha"},{"id":"23", "akun":"Sewa Diterima Di Muka"}],\
+          //                   "ekuitas":[{"id":"31", "akun":"Modal"}, {"id":"32", "akun":"Prive"}],\
+          //                   "pendapatan":[{"id":"41","akun":"Penjualan"},{"id":"42","akun":"Retur Penjualan"}],\
+          //                   "beban":[{"id":"51","akun":"Beban Gaji"},{"id":"52","akun":"Beban Sewa"}]}';
 
 
           function updateBalance()

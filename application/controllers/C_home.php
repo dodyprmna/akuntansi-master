@@ -9,6 +9,7 @@ class C_home extends CI_Controller {
     {
         parent::__construct();
         $this->load->helper(array("url"));
+        $this->load->model('M_home');
 
         if($_SERVER['SERVER_NAME'] == 'localhost')
         {
@@ -24,8 +25,9 @@ class C_home extends CI_Controller {
 
 	public function index()
 	{
+        $data['namaAkun']=$this->M_home->getAllNamaAkun();
         $this->load->view('headerMenu', $this->header_data);
-        $this->load->view('home');
+        $this->load->view('home',$data);
         $this->load->view('footer');
 	}
 }
